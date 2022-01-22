@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 cd $HOME/ninja9
-install.iq() {
+install() {
 rm -rf $HOME/.telegram-cli
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -24,7 +24,7 @@ sudo chmod +x ninja9
 sudo chmod +x ./NE
 ./NE
 }
-if [ "$1" = "install.iq" ]; then
+if [ "$1" = "install" ]; then
 install
 else
 if [ ! -f ./tg ]; then
